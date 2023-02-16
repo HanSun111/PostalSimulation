@@ -34,8 +34,11 @@ public class Address {
         int splitNumAndName = address.indexOf(" ");
         int posOfComma = address.indexOf(",");
         strNum = address.substring(0, splitNumAndName);
-        a = address.substring(splitNumAndName);
-
+        a = address.substring(splitNumAndName + 1);
+        name = a.substring(0, a.indexOf("A") - 1);
+        a = a.substring(a.indexOf("A"));
+        apt = a.substring(0, a.indexOf(","));
+        a = a.substring(a.indexOf(","));
 
     }
 
