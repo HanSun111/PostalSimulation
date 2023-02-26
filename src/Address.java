@@ -4,10 +4,10 @@ public class Address {
     private String name;
     private String city;
     private String state;
-    private int zip;
+    private String zip;
     private String apt;
 
-    public Address(String s, String n, String c, String st, int z, String a){
+    public Address(String s, String n, String c, String st, String z, String a){
         strNum = s;
         name = n;
         city = c;
@@ -16,9 +16,6 @@ public class Address {
         apt = a;
     }
 
-    public String getApt() {
-        return apt;
-    }
 
     public Address(Address a){
         strNum = getStrNum();
@@ -29,6 +26,7 @@ public class Address {
         apt = getApt();
     }
 
+    //finish 3rd Address constructor.
     public Address(String address){
         String a = address;
         int splitNumAndName = address.indexOf(" ");
@@ -58,8 +56,11 @@ public class Address {
         return state;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
+    }
+    public String getApt() {
+        return apt;
     }
 
     public String toString(){

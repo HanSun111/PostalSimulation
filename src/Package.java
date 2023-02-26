@@ -2,13 +2,13 @@ import java.util.Arrays;
 public class Package {
 private Address from;
 private Address to;
-private int l;
-private int h;
-private int w;
+private double l;
+private double h;
+private double w;
 private double lbs;
 
 
-public Package(Address from, Address to, int length, int height, int width, double weight){
+public Package(Address from, Address to, double length, double height, double width, double weight){
     this.from = from;
     this.to = to;
     l = length;
@@ -25,15 +25,15 @@ public Package(Address from, Address to, int length, int height, int width, doub
         return to;
     }
 
-    public int getL() {
+    public double getL() {
         return l;
     }
 
-    public int getH() {
+    public double getH() {
         return h;
     }
 
-    public int getW() {
+    public double getW() {
         return w;
     }
 
