@@ -26,7 +26,6 @@ public class PostalCalculator {
         String toZip = to.getZip();
         return CalculatePostage(fromZip, toZip, weight, totalDimensions);
     }
-
     public static double CalculatePostage (Package p){
         String fromZip = p.getFrom().getZip();
         String toZip = p.getTo().getZip();
